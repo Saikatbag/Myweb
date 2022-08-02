@@ -16,7 +16,7 @@ export default class Nav extends Component {
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
                 {/* <a className="nav-link" aria-current="page" href="/">Home</a> */}
-                <NavLink className="navbar-brand" to='/home'>Home</NavLink>
+                <NavLink className="navbar-brand" to='/'>Home</NavLink>
               </li>
               <li className="nav-item">
                 {/* <a className="nav-link" href="/">News</a> */}

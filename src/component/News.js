@@ -1,6 +1,6 @@
 
 import React, { Component } from 'react';
-import img from '../asset/images.jpg'
+import img from '../asset/images.jpg';
 
 export default class Nwes extends Component {
   render() {
@@ -14,6 +14,6 @@ export default class Nwes extends Component {
             <a href={newsUrl} target = "blank" className="btn btn-sm btn-secondary">Read More</a>
           </div>
       </div>
-    )
+    );
   }
 }

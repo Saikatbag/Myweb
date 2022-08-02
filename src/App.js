@@ -15,8 +15,8 @@ export class App extends Component {
       <BrowserRouter>
         <Nav />
         <Routes>
-          <Route path="/" element={<Saikat />} />
-          <Route path="/saikat" element={<Home />} />
+          <Route path="/saikat" element={<Saikat />} />
+          <Route path="/" element={<Home />} />
           <Route path="/news" element={<NewsContenar />} />
           <Route path="/about" element={<About />} />
         </Routes>
