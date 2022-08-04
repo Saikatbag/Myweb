@@ -25,6 +25,7 @@ export default class Nav extends Component {
               <li className="nav-item">
                 {/* <a className="nav-link" href="/" tabindex="-1" aria-disabled="true">About</a> */}
                 <NavLink className="navbar-brand" to='/about'>About</NavLink>
+                <NavLink className="navbar-brand" to='/cv'>Create CV</NavLink>
               </li>
             </ul>
            

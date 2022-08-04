@@ -2,10 +2,11 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import About from './component/About';
+import Cv from './component/Cv';
 import Home from './component/Home';
-import Nav from './component/Nav'
-import NewsContenar from './component/NewsContenar'
-import Saikat from './component/Saikat';
+import Nav from './component/Nav';
+import NewsContenar from './component/NewsContenar';
+import Saikat from './component/Saikat';;
 
 export class App extends Component {
 
@@ -19,6 +20,7 @@ export class App extends Component {
           <Route path="/" element={<Home />} />
           <Route path="/news" element={<NewsContenar />} />
           <Route path="/about" element={<About />} />
+          <Route path="/cv" element={<Cv/>} />
         </Routes>
       </BrowserRouter>
     )
