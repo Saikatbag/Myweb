@@ -1,0 +1,15 @@
+.btn-con{
+    display: flex;
+    justify-content: space-around;
+}
+.r{
+    display: flex;
+    flex-direction: row;
+}
+.f-1{
+    flex: 1;
+}
+.center-content{
+    display: flex;
+    justify-content: center;
+}
