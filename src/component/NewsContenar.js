@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component} from 'react';
 import Nwes from './News';
 import myText from './test1.json';
 

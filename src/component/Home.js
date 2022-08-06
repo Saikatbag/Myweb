@@ -2,7 +2,9 @@ import React, { Component} from 'react'
 import bg from '../asset/bg.mp4';
 import Textmy from './Textmy'
 import './css/home.css'
-import Zoom from 'react-reveal/Zoom';
+import TypeAnimation from 'react-type-animation';
+// import Slide from 'react-reveal/Slide';
+import { LazyLoadComponent } from 'react-lazy-load-image-component';
 // const bg = React.lazy(()=> import ("../asset/bg.mp4"))
 
 export default class Home extends Component {
@@ -10,8 +12,9 @@ export default class Home extends Component {
       super ();
       console.log("i am constructor")
       this.state={
-        str :"Hi, I am from Garhbeta, West Bengal, I have done my BE in Information Technology at Jadavpur University. And also work as react netive developer for 7 month, I am looking for a good oprotunetion "
-        
+        str1:" I'm a Software Development Engineer . ",
+        str2:" My areas of interest lie in FullStack Development, DevOps . ",
+        str3:" I have experience building scalable frontend architectures. "
       }
     }
   render() {
@@ -19,25 +22,21 @@ export default class Home extends Component {
    
         <div className='main'>
           <div className='overlay'></div>
-          
+          <LazyLoadComponent>
           <video src={bg} autoPlay loop muted />
-        
+          </LazyLoadComponent>     
           <div className='content'>
             <div className='text_colum'>
-            <Textmy direction='true' name="Siakat " />
-            <Textmy  name=" Bag" />
+            <Textmy direction='true' name="Hey I'm " />
+            <Textmy  name="Saikat Bag" />
             </div>
-            <div className='text_contenar '>
-            {/* {this.state.str.split(" ").map((s) => {return (<h4>
-              <Zoom  right delay={1000}>
-              <div>{s+' '}</div>
-              </Zoom>
-              </h4>) })} */}
-              <h4>
-              <Zoom  right cascade delay={2000} duration={4000}>
-              <div>{this.state.str}</div>
-              </Zoom>
-              </h4>
+            <div className='text_contenar'>
+            <TypeAnimation
+            cursor={true}
+            sequence={["",3000,this.state.str1, 3000, this.state.str2,3000, this.state.str3,3000,'']}
+            wrapper="h4"
+            repeat={Infinity}
+            />
             </div>
           </div>
         </div>

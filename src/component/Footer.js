@@ -10,7 +10,8 @@ export default class Footer extends Component {
                     <li className="nav-item"><Link to='/' className="nav-link px-2 text-muted">About</Link></li>
                     <li className="nav-item"><Link to='contact' className="nav-link px-2 text-muted">Contact</Link></li>
                     <li className="nav-item"><Link to='saikat' className="nav-link px-2 text-muted">MyCv</Link></li>
-                </ul>
+                    <li className="nav-item"><Link to='cv' className="nav-link px-2 text-muted">Create CV</Link></li>
+                    </ul>
                 <p className="text-center text-muted">&copy; Garhbeta ChitroShala, Garhbeta</p>
             </footer>
         )
