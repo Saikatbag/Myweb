@@ -1,9 +1,11 @@
 import React, { Component } from 'react'
 import { NavLink } from 'react-router-dom';
-export default class Nav extends Component {
- 
-  render() {
+import "bootstrap/dist/css/bootstrap.css";
 
+
+export default class Nav extends Component {
+
+  render() {
     return (
       <nav className="navbar navbar-expand-lg navbar-dark bg-secondary">
         <div className="container-fluid">

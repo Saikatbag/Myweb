@@ -3,16 +3,15 @@ import bg from '../asset/bg.mp4';
 import Textmy from './Textmy'
 import './css/home.css'
 import TypeAnimation from 'react-type-animation';
-// import Slide from 'react-reveal/Slide';
 import { LazyLoadComponent } from 'react-lazy-load-image-component';
-// const bg = React.lazy(()=> import ("../asset/bg.mp4"))
+import DateTime from './DateTime';
+
 
 export default class Home extends Component {
      constructor (){
       super ();
-      console.log("i am constructor")
       this.state={
-        str1:" I'm a Software Development Engineer . ",
+        str1:" I'm a Software Development Engineer. From Garhbeta West Bangal ",
         str2:" My areas of interest lie in FullStack Development, DevOps . ",
         str3:" I have experience building scalable frontend architectures. "
       }
@@ -26,6 +25,7 @@ export default class Home extends Component {
           <video src={bg} autoPlay loop muted />
           </LazyLoadComponent>     
           <div className='content'>
+            <DateTime/>
             <div className='text_colum'>
             <Textmy direction='true' name="Hey I'm " />
             <Textmy  name="Saikat Bag" />
