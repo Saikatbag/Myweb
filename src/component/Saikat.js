@@ -96,7 +96,7 @@ export default class Saikat extends Component {
             Skill : Python(PyGame) | Adobe Illustrator
             <br/><br/>
             3. Webpage (React) :
-            This is a portfolio web page, heir use sum basic news api for daly newes, and also use wather api for view daly wather report. 
+            This is a portfolio web page, heir use sum basic news api for newes, and also use weather api for view daly wather report. 
             Go to this link http://saikatbag.s3-website-us-west-2.amazonaws.com/<br/>
             Skill : React | mongoDb.(onGoing)
             </div>

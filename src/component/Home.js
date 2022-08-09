@@ -4,7 +4,7 @@ import Textmy from './Textmy'
 import './css/home.css'
 import TypeAnimation from 'react-type-animation';
 import { LazyLoadComponent } from 'react-lazy-load-image-component';
-import DateTime from './DateTime';
+// import DateTime from './DateTime';
 
 
 export default class Home extends Component {
@@ -18,14 +18,12 @@ export default class Home extends Component {
     }
   render() {
     return (
-   
         <div className='main'>
           <div className='overlay'></div>
           <LazyLoadComponent>
           <video src={bg} autoPlay loop muted />
           </LazyLoadComponent>     
           <div className='content'>
-            <DateTime/>
             <div className='text_colum'>
             <Textmy direction='true' name="Hey I'm " />
             <Textmy  name="Saikat Bag" />

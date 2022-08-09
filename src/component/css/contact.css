@@ -1,6 +1,8 @@
+
 .centar{
     display: flex;
     justify-items: center;
     flex-direction: column;
     align-items: center;
+    height: 100vh;
 }

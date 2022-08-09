@@ -16,11 +16,12 @@ video{
     top: 100px;
     position: absolute;
     width: 100%;
-    height: 100%;
+    height: 80%;
     display: flex;
     flex-direction: column;
     align-items: center;
     color: aliceblue;
+    
 }
 .overlay{
     position: absolute;
