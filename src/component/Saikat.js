@@ -1,7 +1,7 @@
 import html2canvas from 'html2canvas';
 import jsPDF from 'jspdf';
 import React, { Component } from 'react';
-import img from "../asset/saikat.jpg";
+import img from "../asset/sai.png";
 import sig from "../asset/saikatsig.png";
 import "./css/cv.css";
 

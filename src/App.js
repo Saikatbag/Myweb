@@ -9,6 +9,7 @@ import From2 from './component/From2';
 import Gallery from './component/Gallery';
 import Home from './component/Home';
 import Nav from './component/Nav';
+import Project from './component/Project';
 import Saikat from './component/Saikat';
 
 
@@ -19,13 +20,20 @@ export class App extends Component {
         <Nav />
         <Routes>
           <Route path="saikat" element={<Saikat />} />
-          <Route path="/" element={<Home />} />     
-          <Route path="about" element={<About />} />
+          <Route path="/" element={<Home />} />  
+
+          <Route path="about" >
+          <Route index element={<About/>} />
+          <Route path="project" element={<Project />} />  
+          </Route>
+
           <Route path="gallery" element={<Gallery />} />
           <Route path="cv" element={<Cv/>} >
+
           <Route index element={<From1/>} />
           <Route path='from2'element={<From2/>}/>
           </Route>
+
           <Route path='contact'element={<Contact/>}/>
         </Routes>
         <Footer/>

@@ -1,28 +1,35 @@
 import React, { Component} from 'react'
 import bg from '../asset/bg.mp4';
+import bg2 from '../asset/bg2.mp4';
+
 import Textmy from './Textmy'
 import './css/home.css'
 import TypeAnimation from 'react-type-animation';
 import { LazyLoadComponent } from 'react-lazy-load-image-component';
-// import DateTime from './DateTime';
+
+
 
 
 export default class Home extends Component {
-     constructor (){
+     constructor (prpps){
       super ();
+      var now = new Date();
+    var time = now.getHours();
       this.state={
-        str1:" I'm a Software Development Engineer. From Garhbeta West Bangal ",
-        str2:" My areas of interest lie in FullStack Development, DevOps . ",
-        str3:" I have experience building scalable frontend architectures. "
+        str1:" I'm a Software Development Engineer. From Garhbeta West Bangal. ",
+        str2:" My areas of interest lie in FullStack Development, DevOps. ",
+        str3:" I have experience building scalable frontend architectures. ",
+        time: time
       }
     }
   render() {
     return (
-        <div className='main'>
+        <div className='mainhome'>
           <div className='overlay'></div>
           <LazyLoadComponent>
-          <video src={bg} autoPlay loop muted />
-          </LazyLoadComponent>     
+          {(this.state.time>=6 & this.state.time<18)? <video src={bg2} autoPlay loop muted />:<video src={bg} autoPlay loop muted />}
+          
+          </LazyLoadComponent> 
           <div className='content'>
             <div className='text_colum'>
             <Textmy direction='true' name="Hey I'm " />
@@ -38,7 +45,6 @@ export default class Home extends Component {
             </div>
           </div>
         </div>
-   
     )
   }
 }

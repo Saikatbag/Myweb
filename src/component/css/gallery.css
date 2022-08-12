@@ -1,4 +1,6 @@
 .main{
+    width: 100%;
+    margin-bottom: 10px;
     display: flex;
     justify-items: center;
     flex-direction: column;
@@ -12,69 +14,51 @@
     text-align: center;
     border-style: solid;
     border-color: rgb(47, 45, 45);
-    width: 80%;
+    width: 90%;
     margin-top: 10px;
     margin-bottom: 10px;
     border-radius: 3px;
     text-shadow: 2px 2px 5px rgb(41, 36, 36);
     box-shadow: 1px 1px 10px rgb(41, 36, 36);
-    display: flex;
-    background-color: rgb(64, 204, 102);
 }
-.main.gallery {
+.gallery {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: antiquewhite;
   }
- .main .gallery h1{
+.gallery h1{
     border-bottom: 2px solid;
-    
     border-color: rgb(47, 45, 45);
   }
-  .main.gallery h1 span{
+.gallery h1 span{
     font-weight: 200;
-    
   }
-
-
  .box{
-    background-color: aqua;
-    display: flex;
-    width: 100%;
-    flex-direction: row;
-    justify-content: space-between;
+    columns: 3;
+    padding: 15px;
    }
-   
-   .dream{
-     display: flex;
-     background-color: antiquewhite;
-     width: 50px;
-     margin: 5px;
-   }
-   
-   .main.dream img{
-     width: 50%;
-     border-radius: 8px;
-     padding-bottom: 15px;
-     
-   }
-   @media only screen and (max-width: 469px){
-    .main .main-gallery.box{
-   flex-direction: column;
+ @media only screen and (max-width: 720px){
+    .box{
+   columns:2;
   }
-  .main .main-gallery.box .dream{
-    width: 100%;
-  }  
+  .main-gallery{
+    width:100%;
   }
-  @media only screen and (max-width: 643px){
-    .main .main-gallery.gallery{
-      width: 100%;
-    }
-    .main .main-gallery.gallery h3{
-      font-size: 1em;
+  }
+  @media only screen and (max-width: 620px){
+    .box{
+   columns:1;
+  }
+  .gallery h1{
+   font-size: 30px;
+  }
+  .main-gallery{
+    width:100%;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  }
     
-    }
+  
  
-    }
    

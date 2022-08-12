@@ -1,12 +1,11 @@
 .ca{
     flex:1;
-    background-color:aliceblue;
+    background-color:rgb(255, 255, 255);
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    
-    
+    justify-content: space-between; 
 }
+
 .ca1{
     flex: 2;
     text-align: center;
@@ -14,9 +13,17 @@
     
 }
 .ci{
-    flex: 1;
-    border-radius: 5px;
+    height: 200px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
     overflow: hidden;
+}
+.ci img{
+    /* width: 100%;
+    height: 100%; */
 }
 h5{
     color: rgba(39, 162, 228, 0.916);

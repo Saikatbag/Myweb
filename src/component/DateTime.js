@@ -8,18 +8,13 @@ export default function DateTime() {
             var showdatetime= new Date();
             var todayDate= showdatetime.getDate() + "/ " + (showdatetime.getMonth()+1) + '/ '+ showdatetime.getFullYear();
             settoday(todayDate)
-            var todayTime= showdatetime.getHours() + ":" + (showdatetime.getMinutes()+1) + ':'+ showdatetime.getSeconds();
+            var todayTime= showdatetime.getHours() + ":" + (showdatetime.getMinutes()) + ':'+ showdatetime.getSeconds();
             setTime(todayTime)
 },[time]);
     
 
   return (
-    <div>
-        <h1>
-        Date:{today}
-        <br/>
-        Time :{time}
-        </h1>
-    </div>
+    {time}
+      
   )
 }
