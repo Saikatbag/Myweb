@@ -25,13 +25,8 @@ export default class Saikat extends Component {
   render() {
     return (
       <div className='container p-3 my-3 ' >
-      <div className='container p-3 my-3 border' id='content' 
-      style={{ 
-        display: "flex",
-        width: '210mm',
-        minHeight: '297mm',
-        marginLeft: 'auto',
-        marginRight: 'auto' }}>
+      <div className='container p-3 my-3 border main_cv_container' id='content' >
+      
         <div className='cv'>
           <div className='ca' >
             <div className='ca1'>
@@ -98,7 +93,7 @@ export default class Saikat extends Component {
             3. Webpage (React) :
             This is a portfolio web page, heir use sum basic news api for newes, and also use weather api for view daly wather report. 
             Go to this link http://saikatbag.s3-website-us-west-2.amazonaws.com/<br/>
-            Skill : React | mongoDb.(onGoing)
+            Skill : React | (onGoing)
             </div>
             <div className='col-md-6 p-2'>
             <h5>HOBBIES:</h5>

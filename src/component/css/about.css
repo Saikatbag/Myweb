@@ -36,6 +36,9 @@ h1 span{
     border-bottom: 1px solid;
     font-size: 30px;
 }
+.container-2 p span {
+    font-weight: bold;
+}
 @media only screen and (max-width: 640px){
     .containerIntro{
         flex-direction: column;

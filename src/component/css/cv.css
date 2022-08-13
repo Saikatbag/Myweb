@@ -5,6 +5,13 @@
     flex-direction: row;
     justify-content: space-between; 
 }
+.main_cv_container{
+    display: "flex";
+    width: '210mm';
+    Height: '297mm';
+    margin-right: 'auto';
+    margin-right: 'auto';
+}
 
 .ca1{
     flex: 2;
@@ -27,4 +34,15 @@
 }
 h5{
     color: rgba(39, 162, 228, 0.916);
+  }
+  @media print {
+
+    .main_cv_container{
+        display: "flex";
+        width: '210mm';
+        Height: '297mm';
+        margin-right: 'auto';
+        margin-right: 'auto';
+    }
+  
   }
