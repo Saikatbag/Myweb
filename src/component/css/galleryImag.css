@@ -1,0 +1,15 @@
+.dream{
+    border-radius: 10px;
+    overflow: hidden;
+    border-radius: 3px;
+    margin-bottom: 10px;
+  }
+  .dream:hover{
+    text-shadow: 2px 2px 5px rgb(41, 36, 36);
+    box-shadow: 1px 1px 10px rgb(41, 36, 36);
+  }
+  .dream img{
+   width: 100%;
+   height: 100%;
+   /* border-radius: 10px; */
+  }

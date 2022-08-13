@@ -1,0 +1,11 @@
+.project_card{
+    width: 340px;
+    height: 100%;
+}
+.project_card img{
+    width: 100%;
+    border-radius: 10px;
+}
+.project_dis{
+    background-color: antiquewhite;
+}

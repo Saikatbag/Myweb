@@ -1,0 +1,22 @@
+.centar{
+    display: flex;
+    justify-items: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+.project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+  .project h1 span{
+    font-weight: 200;
+  }
+  @media only screen and (max-width:720px){
+    .project h1{
+      font-size: 30px;
+    }
+  }
+  
