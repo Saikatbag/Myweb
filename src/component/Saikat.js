@@ -26,7 +26,6 @@ export default class Saikat extends Component {
     return (
       <div className='container p-3 my-3 ' >
       <div className='container p-3 my-3 border main_cv_container' id='content' >
-      
         <div className='cv'>
           <div className='ca' >
             <div className='ca1'>

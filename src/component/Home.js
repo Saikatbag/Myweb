@@ -16,9 +16,9 @@ export default class Home extends Component {
       var now = new Date();
     var time = now.getHours();
       this.state={
-        str1:" I'm a Software Development Engineer. From Garhbeta West Bangal. ",
+        str1:" I'm a Software Development Engineer, from Garhbeta West Bangal. ",
         str2:" My areas of interest lie in FullStack Development, DevOps. ",
-        str3:" I have experience building scalable frontend architectures. ",
+        str3:" I have experience in building scalable frontend architectures. ",
         time: time
       }
     }
