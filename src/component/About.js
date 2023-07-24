@@ -1,6 +1,10 @@
 import React, { Component } from 'react'
 
+<<<<<<< HEAD
 import img from "../asset/saikat.png";
+=======
+import img from "../asset/sai.jpg";
+>>>>>>> 87b1ae8 (old)
 import './css/about.css';
 import { Link } from 'react-router-dom';
 
@@ -75,7 +79,10 @@ export default class About extends Component {
             <br /><span>DataBase</span>MongoDB, My sql.
             <br />
             <br /><span>Subject -</span><a href="https://github.com/Saikatbag/python" target="blank" >Data Structures</a>, Object-oriented programming. ,<br />
+<<<<<<< HEAD
 
+=======
+>>>>>>> 87b1ae8 (old)
             {/* I love <Link to="project">pphotography & Videography. </Link>
               I enjoy watching movies, listening to music, and going on road trips. */}
           </p>
